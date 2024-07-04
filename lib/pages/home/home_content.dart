@@ -1,3 +1,4 @@
+import 'package:course_ligne/component/delevery.dart';
 import 'package:flutter/material.dart';
 
 class HomeContent extends StatelessWidget {
@@ -5,6 +6,11 @@ class HomeContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text("hhhhh");
+    return Padding(
+      padding: const EdgeInsets.all(17.0),
+      child: Column(
+        children: [Delevery()],
+      ),
+    );
   }
 }

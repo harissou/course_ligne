@@ -13,6 +13,7 @@ class Home extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final primaryColor = Theme.of(context).primaryColor;
     return Scaffold(
       body: SafeArea(
         child: IndexedStack(
@@ -24,7 +25,7 @@ class Home extends ConsumerWidget {
 
       //to describe bar navigation, Start
       bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor: Colors.deepPurple, // color bar navigation
+        selectedItemColor: primaryColor, // color bar navigation
         currentIndex: ref.watch(
             indexRef), // for give color to element selected (dynamic method)
         unselectedItemColor: Colors
